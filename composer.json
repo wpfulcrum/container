@@ -4,7 +4,7 @@
   "type": "library",
   "keywords": [],
   "homepage": "https://github.com/wpfulcrum/container",
-  "license": "GPL-2.0+",
+  "license": "MIT",
   "support": {
     "issues": "https://github.com/wpfulcrum/container/issues",
     "source": "https://github.com/wpfulcrum/container"

@@ -1,6 +1,8 @@
 # Container Module
 
-[![Latest Stable Version](https://poser.pugx.org/wpfulcrum/container/v/stable)](https://packagist.org/packages/wpfulcrum/container) [![License](https://poser.pugx.org/wpfulcrum/container/license)](https://packagist.org/packages/wpfulcrum/container)
+[![Build Status](https://travis-ci.org/wpfulcrum/container.svg?branch=develop)](https://travis-ci.org/wpfulcrum/container) 
+[![Latest Stable Version](https://poser.pugx.org/wpfulcrum/container/v/stable)](https://packagist.org/packages/wpfulcrum/container) 
+[![License](https://poser.pugx.org/wpfulcrum/container/license)](https://packagist.org/packages/wpfulcrum/container)
 
 The Fulcrum DI Container Module provides a lean Dependency Injection Container. 
 
