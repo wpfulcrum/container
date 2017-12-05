@@ -4,6 +4,6 @@ namespace Fulcrum\Container\Exception;
 
 use InvalidArgumentException;
 
-class InvalidConcreteException extends InvalidArgumentException implements ContainerExceptionContract
+class InvalidConcreteException extends InvalidArgumentException
 {
 }
