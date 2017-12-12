@@ -17,15 +17,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Fulcrum\\Container\\": "src"
-    },
-    "exclude-from-classmap": [
-      "/tests/"
-    ]
+      "Fulcrum\\Container\\": "src/Container/"
+    }
   },
   "autoload-dev": {
     "psr-4": {
-      "Fulcrum\\Tests\\": "tests/"
+      "Fulcrum\\Tests\\Unit\\": "tests/unit/"
     }
   },
   "require": {
