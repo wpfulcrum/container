@@ -25,7 +25,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Fulcrum\\Container\\Tests\\": "tests/"
+      "Fulcrum\\Tests\\": "tests/"
     }
   },
   "require": {
@@ -45,6 +45,6 @@
   "prefer-stable": true,
   "scripts": {
     "phpcs": "\"vendor/bin/phpcs\"",
-    "test-unit": "\"vendor/bin/phpunit\""
+    "test-unit": "\"vendor/bin/phpunit\" --testsuite unit"
   }
 }

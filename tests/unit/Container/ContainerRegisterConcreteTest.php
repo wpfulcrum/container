@@ -1,32 +1,14 @@
 <?php
 
-namespace Fulcrum\Container\Tests;
+namespace Fulcrum\Tests\Unit\Container;
 
-use Brain\Monkey;
 use Brain\Monkey\Functions;
 use Fulcrum\Container\Exception\InvalidConcreteException;
 use Fulcrum\Container\DIContainer;
+use Fulcrum\Tests\Unit\UnitTestCase;
 
-class ContainerRegisterConcreteTest extends \PHPUnit_Framework_TestCase
+class ContainerRegisterConcreteTest extends UnitTestCase
 {
-    /**
-     * Prepares the test environment before each test.
-     */
-    protected function setUp()
-    {
-        parent::setUp();
-        Monkey\setUp();
-    }
-
-    /**
-     * Cleans up the test environment after each test.
-     */
-    protected function tearDown()
-    {
-        Monkey\tearDown();
-        parent::tearDown();
-    }
-
     public function testThrowsErrorForEmptyConcrete()
     {
         $container = new DIContainer();

@@ -1,10 +1,11 @@
 <?php
 
-namespace Fulcrum\Container\Tests;
+namespace Fulcrum\Tests\Unit\Container;
 
 use Fulcrum\Container\DIContainer;
+use Fulcrum\Tests\Unit\UnitTestCase;
 
-class ContainerGetTest extends \PHPUnit_Framework_TestCase
+class ContainerGetTest extends UnitTestCase
 {
     public function testGet()
     {

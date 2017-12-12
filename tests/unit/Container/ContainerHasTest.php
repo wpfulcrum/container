@@ -1,10 +1,11 @@
 <?php
 
-namespace Fulcrum\Container\Tests;
+namespace Fulcrum\Tests\Unit\Container;
 
 use Fulcrum\Container\DIContainer;
+use Fulcrum\Tests\Unit\UnitTestCase;
 
-class ContainerHasTest extends \PHPUnit_Framework_TestCase
+class ContainerHasTest extends UnitTestCase
 {
     public function testHas()
     {
