@@ -60,4 +60,20 @@ class ContainerHasTest extends UnitTestCase
 
         $this->assertFalse($container->has('doesnotexist'));
     }
+
+    public function testShouldCheckDeeply()
+    {
+        $container = new DIContainer([
+            'foo' => [
+                'bar' => [
+                    'baz' => 'Hello World',
+                ],
+                'baz' => 'Fulcrum',
+            ],
+        ]);
+
+        $this->assertTrue($container->has('foo', 'baz'));
+        $this->assertTrue($container->has('foo', 'bar'));
+        $this->assertTrue($container->has('foo', 'bar.baz'));
+    }
 }

@@ -27,7 +27,8 @@
   },
   "require": {
     "php": "^5.6|^7",
-    "pimple/pimple" : "^3.2"
+    "pimple/pimple" : "^3.2",
+    "wpfulcrum/extender": "^3"
   },
   "require-dev": {
     "brain/monkey": "^2.0",

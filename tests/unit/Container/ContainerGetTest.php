@@ -20,4 +20,22 @@ class ContainerGetTest extends UnitTestCase
             $this->assertEquals($value, $container->get($uniqueId));
         }
     }
+
+    public function testShouldGetByDotNotation()
+    {
+        $container = new DIContainer([
+            'foo' => [
+                'bar' => [
+                    'baz' => 'Hello World',
+                ],
+                'baz' => 'Fulcrum',
+            ],
+        ]);
+
+        $this->assertEquals('Fulcrum', $container->get('foo', 'baz'));
+        $this->assertEquals([
+            'baz' => 'Hello World',
+        ], $container->get('foo', 'bar'));
+        $this->assertEquals('Hello World', $container->get('foo', 'bar.baz'));
+    }
 }

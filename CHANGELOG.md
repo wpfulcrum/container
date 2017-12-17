@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+3.0.3
+- Added `store` method
+- Added "dot" notation capability
+
 3.0.2
 - Standardized `src` architecture
 - Standardized tests architecture
