@@ -72,7 +72,11 @@ class ContainerHasTest extends UnitTestCase
             ],
         ]);
 
+        // Test for Issue #1.
         $this->assertFalse($container->has('bar', 'baz'));
+        $this->assertFalse($container->has('bar', 'bar.baz'));
+        $this->assertFalse($container->has('doesnotexist', 'bar.baz'));
+
         $this->assertTrue($container->has('foo', 'baz'));
         $this->assertTrue($container->has('foo', 'bar'));
         $this->assertTrue($container->has('foo', 'bar.baz'));

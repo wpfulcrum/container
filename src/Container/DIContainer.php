@@ -77,6 +77,7 @@ class DIContainer extends Pimple implements ContainerContract
      *
      * @since 3.0.0
      * @since 3.0.3 "dot" notation
+     * @since 3.0.4 Issue #1
      *
      * @param  string $uniqueId The unique identifier for the parameter or object
      * @param string|null $itemKeys Keys within the item, which can be "dot" notation.
