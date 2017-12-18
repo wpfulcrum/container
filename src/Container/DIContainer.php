@@ -86,6 +86,9 @@ class DIContainer extends Pimple implements ContainerContract
     public function has($uniqueId, $itemKeys = null)
     {
         $hasUniqueId = $this->offsetExists($uniqueId);
+        if ($hasUniqueId !== true) {
+            return false;
+        }
 
         // If there are itemKeys, check deeply.
         if (!empty($itemKeys) && is_string($itemKeys)) {
