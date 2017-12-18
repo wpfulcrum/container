@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+3.0.4
+- Fixes Issue #1
+if the unique ID is not in the container, has() bails out returning false without checking for the item keys.
+
 3.0.3
 - Added `store` method
 - Added "dot" notation capability
