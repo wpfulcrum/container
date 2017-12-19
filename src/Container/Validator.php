@@ -46,7 +46,10 @@ class Validator
         }
 
         throw new \InvalidArgumentException(sprintf(
-            __('The item key(s), given for "%s" unique ID, is(are) an invalid data type. String or integer are required. %s given: %s', 'fulcrum'),
+            __(
+                'The item key(s), given for "%s" unique ID, is(are) an invalid data type. String or integer are required. %s given: %s', // @codingStandardsIgnoreStart - Generic.Files.LineLength.TooLong
+                'fulcrum'
+            ),
             strip_tags($uniqueId),
             ucfirst(gettype($itemKeys)),
             print_r($itemKeys, true)
