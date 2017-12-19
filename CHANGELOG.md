@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+3.0.5
+- Validates item keys
+- Type casts item keys to string, allowing caller to pass integer
+
 3.0.4
 - Fixes Issue #1
 if the unique ID is not in the container, has() bails out returning false without checking for the item keys.
